@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學習單：高中生壓力與大腦健康</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #F0F8FF; /* Alice Blue */
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 {
+            color: #1e3a8a; /* A calming, deep blue */
+        }
+        .section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #4b5563;
+        }
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        textarea:focus, input[type="text"]:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+        }
+        .checkbox-label input {
+            margin-right: 0.75rem;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    </style>
+</head>
+<body class="bg-blue-50">
+
+    <div class="container">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold mb-2">高中生壓力與大腦健康</h1>
+            <p class="text-lg text-gray-600">我的大腦充電計畫 學習單</p>
+        </header>
+
+        <form>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div>
+                    <label for="student-name" class="block text-sm font-medium text-gray-700">姓名：</label>
+                    <input type="text" id="student-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <div>
+                    <label for="student-date" class="block text-sm font-medium text-gray-700">日期：</label>
+                    <input type="date" id="student-date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="text-2xl font-semibold mb-4">環節一：我的大腦，你還好嗎？</h2>
+                <p class="mb-4 text-gray-700">請根據你的日常經驗，勾選以下符合你情況的描述，並簡單寫下你的感受。</p>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span class="font-bold">早晨未開機：</span> 早上需要咖啡或茶才能清醒。
+                        </label>
+                        <textarea rows="2" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="你的感受或經驗..."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span class="font-bold">多工幻覺：</span> 念書時常一心多用，邊看書邊滑手機或看影片。
+                        </label>
+                        <textarea rows="2" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="你的感受或經驗..."></textarea>
+                    </div>
+                    
+                    <div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span class="font-bold">待辦清單魔咒：</span> 總覺得事情多到做不完，感到焦慮。
+                        </label>
+                        <textarea rows="2" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="你的感受或經驗..."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span class="font-bold">放學儀式：</span> 回家後需要透過滑手機、追劇或吃東西來放鬆。
+                        </label>
+                        <textarea rows="2" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="你的感受或經驗..."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="rounded text-blue-600">
+                            <span class="font-bold">睡前轉不停：</span> 躺在床上時，腦袋還在想事情，很難入睡。
+                        </label>
+                        <textarea rows="2" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="你的感受或經驗..."></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="text-2xl font-semibold mb-4">環節二：壓力：大腦的「暴雨」與「水溝」</h2>
+                <div class="mb-6">
+                    <label for="pressure_good_bad" class="block font-medium text-gray-700 mb-2">1. 你覺得壓力一定是壞事嗎？有沒有什麼時候壓力反而能幫助我們？</p>
+                    <textarea id="pressure_good_bad" rows="3" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="請寫下你的想法和例子..."></textarea>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">2. 我的壓力排水系統</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label for="acute-stress" class="block font-medium text-gray-700">急性壓力 (例如：快到的考試、比賽)</label>
+                            <input type="text" id="acute-stress" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="寫下你的急性壓力來源...">
+                        </div>
+                        <div>
+                            <label for="continuous-stress" class="block font-medium text-gray-700">連續的急性壓力 (例如：連續好幾天都有小考)</label>
+                            <input type="text" id="continuous-stress" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="寫下你的連續急性壓力來源...">
+                        </div>
+                        <div>
+                            <label for="chronic-stress" class="block font-medium text-gray-700">慢性壓力 (例如：人際關係、對未來的擔憂)</label>
+                            <input type="text" id="chronic-stress" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="寫下你的慢性壓力來源...">
+                        </div>
+                        <div>
+                            <label for="coping-mechanisms" class="block font-medium text-gray-700">我平常的「排水」方式 (如何紓解壓力)：</p>
+                            <textarea id="coping-mechanisms" rows="3" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="例如：聽音樂、運動、找朋友聊天..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="text-2xl font-semibold mb-4">環節三：壓力如何「燒壞」大腦？</h2>
+                <p class="mb-4 text-gray-700">回想一下，當你感到壓力很大時，你的身心會出現哪些變化？請具體描述。</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="memory-effect" class="block font-medium text-gray-700">🧠 記憶力：</label>
+                        <input type="text" id="memory-effect" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="例如：常常忘東忘西...">
+                    </div>
+                    <div>
+                        <label for="reaction-effect" class="block font-medium text-gray-700">⚡ 反應速度：</label>
+                        <input type="text" id="reaction-effect" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="例如：腦袋轉不過來、反應變慢...">
+                    </div>
+                    <div>
+                        <label for="emotion-effect" class="block font-medium text-gray-700">😠 情緒：</label>
+                        <input type="text" id="emotion-effect" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="例如：容易生氣、難過、不耐煩...">
+                    </div>
+                    <div>
+                        <label for="sleep-effect" class="block font-medium text-gray-700">😴 睡眠品質：</label>
+                        <input type="text" id="sleep-effect" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="例如：很難睡著、睡一下就醒、一直做夢...">
+                    </div>
+                    <div>
+                        <label for="immunity-effect" class="block font-medium text-gray-700">🛡️ 抵抗力：</label>
+                        <input type="text" id="immunity-effect" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="例如：常常感冒、嘴巴破洞...">
+                    </div>
+                    <div>
+                        <label for="appetite-effect" class="block font-medium text-gray-700">🍔 食慾：</label>
+                        <input type="text" id="appetite-effect" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="例如：暴飲暴食、沒胃口...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="text-2xl font-semibold mb-4">環節四：幫大腦「下班」與「放學」——我的大腦充電計畫</h2>
+                <p class="mb-4 text-gray-700">根據今天學到的方法，為自己設計一套可以實踐的「大腦充電計畫」。</p>
+                <div class="space-y-6">
+                    <div>
+                        <label for="shutdown-routine" class="block font-medium text-gray-700">1. 我的睡前 30 分鐘「關機」儀式：</label>
+                        <textarea id="shutdown-routine" rows="3" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="寫下 2-3 個你願意嘗試的睡前放鬆活動（例如：聽輕音樂、伸展、寫日記...）"></textarea>
+                    </div>
+                    <div>
+                        <label for="blank-space" class="block font-medium text-gray-700">2. 我的每日 10 分鐘「空白時段」：</label>
+                        <textarea id="blank-space" rows="3" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="安排一個具體的時間和活動，讓大腦完全放空（例如：放學回家後，坐在窗邊看天空10分鐘...）"></textarea>
+                    </div>
+                    <div>
+                        <label for="other-methods" class="block font-medium text-gray-700">3. 其他我想嘗試的紓壓方式：</label>
+                        <textarea id="other-methods" rows="3" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="可以是運動、聽音樂、畫畫、跟朋友聊天，或是任何能讓你感到平靜和快樂的事。"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <p class="text-lg font-semibold text-gray-700">學習筆記術的目的是為了更有效率地學習，而健康的身體和清晰的大腦是高效學習的基石。</p>
+                <p class="mt-2 text-gray-600">把今天學到的知識應用到生活中，好好照顧你的大腦吧！</p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
